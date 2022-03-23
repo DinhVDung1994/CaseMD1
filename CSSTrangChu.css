@@ -1,0 +1,170 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.product{
+    max-width: 1350px;
+    padding: 15px 15px;
+}
+.contain{
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ddd;
+}
+.product-item{
+    width: 24%;
+    background-color: #fff;
+    margin: 5px;
+}
+.product-item-text{
+    text-align: center;
+    color: chocolate;
+    text-transform: uppercase;
+}
+/*.btthem button{*/
+/*    height: 30px;*/
+/*    margin-left: 85px;*/
+/*    margin-top: 10px;*/
+/*    cursor: pointer;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    transition: all 0.3s ease-in-out;*/
+/*}*/
+/*.btthem button:hover{*/
+/*    background-color: tomato;*/
+/*}*/
+.product-item button:hover{
+    background-color: tomato;/* khi hover vào nút button sẽ đổi màu*/
+}
+.product-item button{
+    height: 30px;
+    width: 50%;
+    cursor: pointer;
+    margin-left: 85px;
+    margin-top: 10px;
+    border: none;/* không hiện đường viền nút button*/
+    border-radius: 5px; /* bo viền nút button*/
+    transition: all 0.3s ease-in-out;/* làm chậm quá trình hover*/
+}
+h1{
+    text-align: center;/* căn vị trí chữ*/
+    color: black;/* màu chữ*/
+    padding: 10px 20px;/* căn trên dưới 10px trái phải 20px*/
+    /*text-transform: capitalize;!*viết hoa chữ cái đầu*!*/
+    /*text-transform: lowercase; Viết thường hết*/
+    text-transform: uppercase;/* Viết hoa hết*/
+    border: 1px solid black;/* hiển thị đường viền của thẻ h3 */
+}
+
+/*----------------headline----------------*/
+#wrapper2{
+  margin: 0px;
+    padding: 0px;
+}
+.header{
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header li a{
+    text-decoration: none;
+}
+.header li{
+    list-style: none;
+}
+/*------------------Giỏ Hàng---------------*/
+.cart{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+.cart h2{
+    margin-bottom: 20px;
+}
+.cart table{
+    width: 100%;
+}
+.cart table tr td{
+    border-bottom: 1px solid cornflowerblue;
+    padding: 12px 0px;
+}
+/*------------------foodter===============*/
+.foodter{
+    text-align: center;
+    padding: 20px 20px;
+}
+/*---------------button giỏ hàng===========*/
+.giohang{
+    cursor: pointer;
+}
+.buyproduct{
+    background-color: cyan;
+    width: 150px;
+    height: 30px;
+}
+.cart{
+    position: fixed;
+    height: 85vh;
+    width: 400px;
+    top: 50px;
+    background-color: darkgrey;
+    overflow: scroll;
+    right: 100%;
+    transition: all 0.3s ease;
+}
+.close{
+
+    text-align: left;
+    padding-left: 25px;
+}
+.closeTap{
+    cursor: pointer;
+}
+.showcart{
+    cursor: pointer;
+}
+/*===========MENU================*/
+#wrapper1{
+    padding: 30px 10px;
+    margin: 0px;
+}
+
+ul.menu{
+    display: flex;/* chuyển từ li xếp cột dọc sang xếp hàng ngang*/
+    flex-wrap: wrap;/*thuộc tính linh hoạt thay đổi khung hiển thị phần tử khi thay đổi kích thước web*/
+    justify-content: space-between;/*căn chỉnh mục linh hoạt ở tâm trang web*/
+    list-style: none;
+    background-color: lightblue;
+    height: 45px;
+    text-transform: uppercase;
+}
+ul.menu li{
+    padding-top: 10px;
+}
+ul.menu li:hover a{
+    background: red;
+    color: yellow;
+
+
+}
+ul.menu li a{
+    text-decoration: none;
+    color: orangered;
+    display: block;
+    padding: 0 25px;
+    line-height: 30px;
+}
+ul.menu li ul{
+    display: none;
+    min-width: 200px;
+    position: absolute;
+}
+ul.menu li:hover ul{
+    display: block;
+    list-style: none;
+    z-index: 3;
+}

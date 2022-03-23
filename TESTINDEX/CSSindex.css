@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#wrapper{
+    max-width: 1200px;/*xác định độ rộng hiển  thị các phần tử của trang web*/
+    margin: 0 auto;/* căn lề trên dưới trái phải 0px*/
+}
+.headline{
+    text-align: center;/* căn chỉnh cả phần khung h3 ra giữa trang web*/
+    margin: 40px 0px;/*căn lề trên dưới 40px và trái phải 0px*/
+}
+h3{
+    text-align: center;/* căn vị trí chữ*/
+    font-size: 18px;/* kích thước chữ*/
+    color: black;/* màu chữ*/
+    padding: 10px 20px;/* căn trên dưới 10px trái phải 20px*/
+    /*text-transform: capitalize;!*viết hoa chữ cái đầu*!*/
+    /*text-transform: lowercase; Viết thường hết*/
+    text-transform: uppercase;/* Viết hoa hết*/
+    border: 1px solid black;/* hiển thị đường viền của thẻ h3 */
+    display: inline-block;/*thuộc tính bo đường viền bằng diện tích chữ*/
+}
+ul.list-items{
+    display: flex;/* chuyển từ li xếp cột dọc sang xếp hàng ngang*/
+    flex-wrap: wrap;/*thuộc tính linh hoạt thay đổi khung hiển thị phần tử khi thay đổi kích thước web*/
+    justify-content: space-between;/*căn chỉnh mục linh hoạt ở tâm trang web*/
+    list-style: none;
+}
+ul.list-items li{
+    flex-basis: 25%;/*chia đều phần thuộc tính trên mỗi hàng chiếm 25% diện tích*/
+    padding-left: 15px;/*căn trái giữa các phần tử 15px*/
+    padding-right: 15px;/*căn phải giữa các phần tử 15px tạo khoảng cách giữa các phần tử*/
+    box-sizing: border-box;/*Bao gồm phần đệm và đường viền trong tổng chiều rộng và chiều cao của phần tử*/
+    margin-bottom: 50px;/*tạo khoảng cách phía dưới giữa các phần tử*/
+}
+ul.list-items li .list-item-infor{
+    padding: 20px 0px;/* tạo khoảng cách giữa hình ảnh và thông tin bên dưới*/
+}
+ul.list-items li img{
+    max-width: 100%;
+    height: auto;
+}
+ul.list-items li .item-top{
+    position: relative;
+    overflow: hidden;/*ẩn phần tử*/
+}
+/*ul.list-items li .item-top a.buy-now{*/
+/*    text-transform: uppercase;!*chuyển sang chữ hoa*!*/
+/*    text-decoration: none;!*bỏ gạch dưới*!*/
+/*    text-align: center;!*căn giữa chữ*!*/
+/*    display: block;!*hiển thị thẻ a.buy-now ra khỏi img*!*/
+/*    color: cornsilk;*/
+/*    background-color: lightslategray;*/
+/*    position: absolute;*/
+/*    bottom: -18px;*/
+/*    width: 100%;*/
+/*    transition: 0.25s ease-in-out;*/
+/*}*/
+ul.list-items li .item-top button.buy-now{
+    text-transform: uppercase;/*chuyển sang chữ hoa*/
+    text-decoration: none;/*bỏ gạch dưới*/
+    text-align: center;/*căn giữa chữ*/
+    display: block;/*hiển thị thẻ a.buy-now ra khỏi img*/
+    color: cornsilk;
+    background-color: lightslategray;
+    position: absolute;
+    bottom: -18px;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+}
+ul.list-items li .item-top:hover button.buy-now{
+    bottom: 0px;
+}
+/*ul.list-items li .item-top:hover a.buy-now{*/
+/*    bottom: 0px;*/
+/*}*/
+ul.list-items li .list-item-infor a {
+    display: block;/*hiển thị*/
+    text-decoration: none;/*bỏ phần gach chân ở thẻ a*/
+}
+ul.list-items li .list-item-infor a.list-item-type{
+    text-transform: uppercase;/*in hoa hết*/
+    color: chocolate;
+    padding: 3px 0px;
+}
+ul.list-items li .list-item-infor a.list-item-name{
+    text-transform: capitalize;/* in hoa chữ cái đầu*/
+    color: chocolate;
+    padding: 2px 0px;
+}
+ul.list-items li .list-item-infor .list-item-price{
+    font-weight: bold;/*thuộc tính tố đậm chữ*/
+}
+#wrapper1{
+    padding: 30px 10px;
+    margin: 0px;
+}
+
+ul.menu{
+    display: flex;/* chuyển từ li xếp cột dọc sang xếp hàng ngang*/
+    flex-wrap: wrap;/*thuộc tính linh hoạt thay đổi khung hiển thị phần tử khi thay đổi kích thước web*/
+    justify-content: space-between;/*căn chỉnh mục linh hoạt ở tâm trang web*/
+    list-style: none;
+    background-color: lightblue;
+    height: 45px;
+    text-transform: uppercase;
+}
+ul.menu li{
+    padding-top: 10px;
+}
+ul.menu li:hover a{
+    background: red;
+    color: yellow;
+
+
+}
+ul.menu li a{
+    text-decoration: none;
+    color: orangered;
+    display: block;
+    padding: 0 25px;
+    line-height: 30px;
+}
+ul.menu li ul{
+    display: none;
+    min-width: 200px;
+    position: absolute;
+}
+ul.menu li:hover ul{
+    display: block;
+    list-style: none;
+    z-index: 3;
+}
+#wrapper2{
+    padding: 10px 10px;
+    margin: 0px;
+}
+ul.header{
+    display: flex;
+    flex-wrap: wrap;/*thuộc tính linh hoạt thay đổi khung hiển thị phần tử khi thay đổi kích thước web*/
+    justify-content: space-between;
+    align-items: center;
+}
+ul.header li{
+    list-style: none;
+}
+ul.header li a{
+    text-decoration: none;
+    font-weight: bold;
+}
